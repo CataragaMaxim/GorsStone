@@ -1,0 +1,122 @@
+.list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 16px;
+    padding: 0px;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0px;
+    width: 100%;
+}
+
+.contact-name {
+    width: 49%;
+    margin-right: 5px;
+}
+
+.contact-email {
+    width: 49%;
+    margin-left: 5px;
+}
+
+.contact-message {
+    width: 100%;
+}
+
+.contact-button input:focus {
+    outline: none;
+}
+
+.contact-name ,
+.contact-email ,
+.contact-message ,
+.contact-button {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.contact-name input ,
+.contact-email input {
+    padding: 5px 0px;
+    margin-top: 10px;
+}
+
+.contact-name input ,
+.contact-email input ,
+.contact-message textarea {
+    width: 100%;
+}
+
+.label {
+    font-family: "Yanone Kaffeesatz",serif;
+    font-size: 18px;
+}
+
+.item2 {
+    width: 20%;
+    padding-right: 20px;
+}
+
+.item2_list {
+    list-style: none;
+    padding: 0px;
+}
+
+.item2_list h3 {
+    font-family: "Yanone Kaffeesatz",serif;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+
+.item2_item {
+    color: #3a3738;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 850px) {
+    .list {
+        flex-direction: column;
+        margin: 16px 10px;
+    }
+    .item {
+        width: 100%;
+    }
+    .contact-list {
+        flex-direction: column;
+    }
+    .contact-name {
+        width: 100%;
+        margin-right: 0px;
+    }
+    .contact-email {
+        width: 100%;
+        margin-left: 0px;
+    }
+    .contact-button input {
+        background: gray;
+        color: white;
+        padding: 20px;
+        font-size: 20px;
+    }
+    .item2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        padding: 0px;
+    }
+}
